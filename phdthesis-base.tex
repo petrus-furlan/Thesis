@@ -1,0 +1,125 @@
+\documentclass[12pt, italian]{PhdThesis}[2014/09/23]%,UdinePhdThesisCR
+\usepackage{babel}
+\usepackage[final]{graphicx}
+
+\usepackage{apacite}                                    % Formatta la bibliografia secondo lo standard APA 6.
+\usepackage{blindtext}                                  % Genera il Lorem Ipsum per verificare la corretta formattazione.
+\usepackage[OT1]{fontenc}                               % Permette la selezione di codifiche di font per il documento garantendo 
+                                                        %   anche comandi specifici per famiglia di font.
+\usepackage[a4paper, margin=23mm]{geometry}             % Formatta in maniera "semi-automatica" le varie pagine del documento 
+                                                        %   permettendo anche l'uso dell'auto-centering.
+\usepackage{graphicx}                                   % Manipola in maniera basilare il testo, fornendo colori e grafici.
+\usepackage{lipsum}                                     % Genera il Lorem Ipsum trattato come un array di paragrafi. 
+\usepackage{natbib}                                     % Genera la bibliografia, generando anche note numerate.
+\usepackage{ragged2e}                                   % Formattazione del testo irregolare. 
+\usepackage{parskip}                                    % Gestione dell'interlinea tra paragrafi
+\usepackage{setspace}                                   % Gesitione dell'interlinea
+
+\usepackage[hyphens]{url}                               % Parametri aggiuntivi per la formattazione dei link
+\usepackage{hyperref}                                   %
+\hypersetup{breaklinks = true, pdfborder = {0 0 0}}                          % Tramite il pacchetto precedente, permette di mandare a capo i link, 
+                                                        %   suddividendoli per trattini
+
+\tolerance=1                                            % Gruppo di comandi che permettono di giustificare il testo, 
+\emergencystretch=\maxdimen                             %   aggiungendo spazi bianchi invece di andare a capo.
+\hyphenpenalty=10000
+\hbadness=10000
+
+\begin{document}
+
+    \frontmatter
+    \begin{titlepage}
+        \centering
+        \includegraphics[width=4cm]{stemma-nero.png}
+        \vspace{1cm}
+    
+        \textsc{
+            \Huge{Università degli Studi di Udine}\newline
+            \vspace{0,5cm}
+            \rule{\textwidth}{0,5pt}
+        }
+    
+        \vspace{2,5cm}
+        \Centering
+        \LARGE{Corso di Laurea in Scienze e Tecnologie Multimediali}
+        \newline
+        \vspace{0,3cm}
+        \normalsize{CL-20 CL-31}
+        \vspace{1,5cm}
+        \newline
+        \centering
+        
+        \huge{\textbf{Figura e ruolo \newline del Tecnico Informatico \newline in un Polo Universitario}}
+        % matricola in caso se c'è spazio
+
+        \vspace{3,5cm}
+        \Large{\begin{flushleft}
+            \textsl{Relatore:}\hfill\textsl{Laureando:}
+            \newline
+            Prof. Niki Martinel \hfill Pietro Furlan
+        \end{flushleft}}
+        \Centering
+        \vspace{1cm}
+        \textsc{Anno Accademico: 2024/2025}
+        
+    \end{titlepage}
+
+\thispagestyle{empty}
+\newpage
+\onehalfspacing
+
+    \begin{dedication}
+        \itshape{
+            Ringrazio il Prof. Niki Martinel \\ per essere stato mio Relatore e Tutor di tirocinio. \\ \hfill \break
+            Ringrazio Mary, Roberto, Agnese, Eleonora. \\
+            Grazie anche a Susj, Frank, \\ Mirella e Giovanni, Flora e Francesco.
+        }
+    \end{dedication}
+    
+    \begin{abstract}
+            The proposed thesis will focus on the figure and role of the IT Technician in a University Campus based upon the curricular internship at Gorizia Multipurpose Center (CEGO). The thesis has been organized into several chapters, each of which has been divided into paragraphs to better provide information regarding the development of said internship and to appropriately outline the role of the IT Technician.
+            The first chapter serves as the introduction to the description of the CEGO and discusses the key roles within it through interviews conducted in person and remotely via the Microsoft Teams platform. The differences between the CEPO and the CEGO are described afterwards in a separate paragraph to better illustrate them. 
+        \par
+            Immediately after the introductory chapter, the devices are then listed that may be encountered, the role of those devices is described within the physical topography of CEGO's multimedia classrooms. 
+            The various tasks of the IT Technician are explained next, distinguishing between those related to collaboration in IT and multimedia management, those related to the maintenance of IT and audiovisual systems, and finally, those of a more general nature that cannot easily be classified into these two categories.
+        \par
+            Thus a chapter will be dedicated to discussing the future of the IT Technician role in a digital world increasingly dominated by Artificial Intelligence. This chapter will also illustrate how the dynamics between the two entities can be resolved by proposing possible solutions for coexistence.
+        \par
+            Adequate space is also given to the results obtained from the interventions during the internship and how these can impact the quality of the services offered within CEGO, as well as at a University Campus. This section also discusses how the Bachelor Degree in Multimedia Science and Technology (CL-20 CL-31) prepares for future IT/multimedia technicians and maintenance workers, as well as Teachers for the B016 Computer Science and Technology Laboratories competition class, as required by current legislation.
+        \par
+            The thesis concludes with a summary of the key points regarding the IT Technician and their role within a university, as well as a reflection on the interventions and tools encountered.
+    \end{abstract}
+    
+    \frontmatter
+    \partstyle{serifbig}
+    \chaptertitlestyle{serifbig}
+    \pagestyle{serif}
+    \justifying
+        \renewcommand * \contentsname{Sommario}                 % Rinomina il Sommario da "Tables of Content" in "Sommario"
+        \tableofcontents
+        \listoffigures
+        
+% ---------------------------------------------------------------------------------------
+    \include{Capitoli/1-Introduzione}
+% --------------------------------------------------------------------------------------- 
+    \mainmatter
+    \include{Capitoli/2-Premessa}
+% ---------------------------------------------------------------------------------------
+    \include{Capitoli/3-Dispositivi}
+% ---------------------------------------------------------------------------------------
+% revisione fino a qui --> in pausa fino a che non ho scritto molto
+    \include{Capitoli/4-Mansioni}
+% ---------------------------------------------------------------------------------------
+    \include{Capitoli/5-Discussione}
+% ---------------------------------------------------------------------------------------
+    \include{Capitoli/6-Risultati}
+% ---------------------------------------------------------------------------------------   
+    \backmatter
+    \include{Capitoli/7-Conclusioni}
+
+    % --- Bibliografia --- %
+    \bibliography{BibliografiaTesi161633}
+    \bibliographystyle{apacite}                             % Imposta lo stile della Bibliografia in base al Modello APA 6th
+    \printindex
+    
+\end{document}

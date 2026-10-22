@@ -1,0 +1,218 @@
+\chapter{Introduzione ai sistemi informatici}
+    \section{introduzione}
+    \section{l'informazione e la sua codifica}
+    \section{l'elaborazione e la struttura dell'informazione}
+    \section{i linguaggi per la formalizzazione dell'informazione}
+    \section{la trasmissione dell'informazione}
+    \section{le infrastrutture hardware}
+        l'architettura di riferimento
+        l'esecutore
+            la struttura del processore
+            le CPU pipeline
+            evoluzione delle CPU
+        la memoria
+            parametri per la descrizione di una memoria
+            organizzazione gerarchica della memoria
+        i dispositivi per le memorie di massa
+            i dischi e i nastri magnetici
+            i dischi ottici
+        l'interfaccia ingresso/uscita
+            le operazioni I/O a controllo del programma
+            le operazioni I/O gestite tramite interruzione
+            le operazioni I/O con accesso diretto alla memoria
+        le principali periferiche
+            il video e la tastiera
+            i dispositivi di puntamento
+            le stampanti
+            le periferiche per la gestione di immagini, suoni e movimenti
+    \section{le infrastrutture software}
+        le funzioni del sistema operativo
+            gli elementi di un sistema operativo
+            l'evoluzione dei sistemi operativi
+            i modelli organizzativi dei sistemi operativi
+        i processi
+            la gestione dei processi
+            il modello client-server
+            i modelli ibridi
+        la gestione della memoria
+            paginazione e memoria virtuale
+            la segmentazione della memoria
+        la gestione delle periferiche
+        il file system
+            la localizzazione dei dati
+            i servizi di base
+        la gestione della rete
+    \section{le infrastrutture di rete}
+        i mezzi di trasmissione
+        la tecnologia di trasmissione
+        le reti geografiche
+            la comunicazione a circuito
+            la comunicazione a pacchetto
+            ISDN (Integrated Services Digital Network)
+            DSL (Digital Subscriber Line - Asymmetric, Very-high-bit-rate, V2)
+            WiMAX
+        le reti locali
+            i mezzi di trasmissione e le topologie di rete
+            i metodi di accesso
+            le tipologie di rete
+            l'interconnessione di LAN
+        l'architettura del software di rete
+            l'architettura a livelli di un insieme di protocolli
+            i principi di funzionamento di TCP/IP
+            indirizzi numerici e indirizzi simbolici
+    \section{le applicazioni}
+        l'interazione con l'utente 
+        applicazioni come sistemi 
+        le applicazioni come sistemi distribuiti 
+            le applicazioni web 
+        le applicazioni per dispositivi mobili 
+        le tecnologie per il World Wide Web
+            il WWW e l'identificazione delle risorse
+            l'utilizzo di un'applicazione web
+            le tecnologie per le applicazioni web-oriented
+        il problema della sicurezza
+% ----------------------------------------------------
+\chapter{Reti di calcolatori e internet}
+    \section{reti di calcolatori e internet}
+    \section{livello applicazione}
+    \section{livello trasporto}
+    \section{livello rete}
+    \section{livello collegamento: collegamenti, reti di accesso e locali}
+    \section{reti multimediali}
+        applicazioni multimediali di rete
+            proprietà del video
+            proprietà dell'audio
+            tipi di applicazioni multimediali
+        streaming di video registrato
+            streaming UDP
+            streaming HTTP
+            streaming adattivo e DASH
+            reti per la distribuzione di contenuti (CDN)
+        Voice-over-IP
+            limiti del servizio best-effort IP
+            rimozione del jitter al ricevente
+            recupero dei pacchetti persi
+            un caso di studio: VoIP con Skype
+        protocolli per applicazioni in tempo reale
+            RTP (Realtime Transport Protocol)
+            SIP (Session Initiation Protocol)
+        supporto di internet alle applicazioni multimediali
+            dimensionamento delle reti best-effort
+            fornitura di più classi di servizio
+            diffserv (differentiated services)
+            fornire garanzie di qualità del servizio (QoS) per ogni connessione: prenotazione delle risorse e ammissione delle chiamate
+    \section{sicurezza nelle reti}
+        sicurezza di rete
+        principi di crittografia
+            crittografia a chiave simmetrica
+            crittografia a chiave pubblica
+        integrità dei messaggi e firma digitale
+            funzioni hash crittografiche
+            codice di autenticazione dei messaggi
+            firme digitali
+        autenticazione
+            protocollo auth ap1.0
+            protocollo auth ap2.0
+            protocollo auth ap3.0
+            protocollo auth ap4.0
+        rendere sicura la posta elettronica
+            email secure
+            PGP (pretty good privacy; asym)
+        rendere sicure le connessioni TCP:SSL
+            quadro generale
+            un quadro più completo
+        sicurezza a livello di rete: IPsec
+            IPsec e le reti virtuali private VPN
+            i protocolli AH (auth header) e ESP (encapsulated sec. protc)
+            associazioni di sicurezza
+            il datagramma IPsec
+            IKE: gestione delle chiavi in IPsec (internet key exchange)
+        sicurezza nelle LAN wireless
+            wired equivalent privacy (WEP)
+            IEEE 802.11i --> WiFi Protected Access 2 (WPA2 / WPA3)
+        sicurezza operativa: firewall e sistemi di rilevamento delle intrusioni
+            firewall
+            sistemi di rilevamento delle intrusioni
+    \section{gestione della rete}
+        che cosa vuol dire gestire una rete?
+        infrastruttura di gestione standard di internet
+            struttura delle informazioni di gestione
+            base di dati gestionali: MIB (management information base)
+            operazioni del protocollo SNMP (simple network management protocol)
+            sicurezza e amministrazione
+        ASN.1 (Abstract Syntax Notation One)
+% ----------------------------------------------------
+\chapter{Reti di calcolatori (Sesta Edizione)}
+    \section{Sicurezza delle reti}
+        fondamenti di sicurezza delle reti
+            principi fondamentali della sicurezza
+            principi fondamentali degli attacchi
+            dalle minacce alla sicurezza alle soluzioni
+        elementi fondamentali di un attacco
+            reconnaissance
+            sniffing e snooping (con un pizzico di spoofing)
+            spoofing (oltre ARP)
+            disruption (interruzione)
+        firewall e sistemi di rilevamento delle intrusioni
+            firewall
+            rilevamento e prevenzione delle intrusioni
+        crittografia
+            introduzione alla crittografia
+            due principi crittografici fondamentali
+            cifrari a sostituzione
+            cifrari a trasposizione
+            blocchi monouso
+        algoritmi a chiave simmetrica
+            DES - Data Encryption Standard
+            AES - Advanced Encryption Standard
+            modalità di cifratura
+        algoritmi a chiave pubblica
+            RSA
+            altri algoritmi a chiave pubblica
+        firme digitali
+            firme a chiave simmetrica
+            firme a chiave pubblica
+            message digest
+            attacco del compleanno
+        gestione delle chiavi pubbliche
+            certificati
+            X.509
+            infrastrutture a chiave pubblica
+        protocolli di autenticazione
+            autenticazione basata su un segreto condiviso
+            come stabilire una chiave condivisa: lo scambio di chiave Diffie-Hellman
+            autenticazione usando un centro di distribuzione delle chiavi
+            autenticazione con kerberos
+            autorizzazione con crittografia a chiave pubblica
+        sicurezza delle comunicazioni
+            IPsec
+            VPN - Reti Virtuali Private
+            Sicurezza Wireless
+        sicurezza della posta elettronica
+            PGP - Pretty Good Privacy
+            S/MIME (Secure/Multipurpose Internet Mail Extensions)
+        sicurezza del web
+            minacce alla sicurezza
+            sicurezza nell'attribuzione dei nomi e DNSSEC
+            sicurezza del livello trasporto
+            sicurezza con codici non affidabili
+        aspetti sociali
+            privacy
+            libertà di parola
+            copyright
+% ----------------------------------------------------
+\chapter{The Nature of Code}
+    \section{Neural Networks}
+        introducing Artifical Neural Networks
+        the Perceptron
+        putting the "network" in neural network
+        machine learning with ml5.js
+        building a gesture classifier
+    \section{Neuroevolution}
+        reinforcement learning
+        evolving neural network is neat!
+        coding flappy bird
+        neuroevolutionary flappy bird
+        steering the neuroevolutionary way
+        a neuroevolutionary ecosystem
+        
